@@ -1,0 +1,465 @@
+:root {
+    --primary: hsl(257, 27%, 26%);
+    --secondary: hsl(180, 66%, 49%);
+    --dark: hsl(0, 0%, 75%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+}
+
+main {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0 0 0;
+}
+
+header .desktop {
+    display: none;
+}
+
+header .mobile {
+    height: 2rem;
+}
+
+li {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ul {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    gap: .5rem;
+}
+
+.menu {
+    text-align: center;
+    background-color: var(--primary);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    width: 60vw;
+    margin: auto;
+    display: none;
+    height: 35vh;
+    margin-bottom: -18rem;
+    position: relative;
+}
+
+.menu button {
+    height: 3rem;
+    border: none;
+    color: white;
+}
+
+.menu ul {
+    display: grid;
+    gap: .4rem;
+    padding: 0;
+    font-weight: bold;
+    /* font-size: 18px; */
+    color: white;
+}
+
+.menu ul:first-child {
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu ul:last-child {
+    gap: .1rem;
+}
+
+.signup {
+    background-color: var(--secondary);
+    padding: .5rem;
+    height: 1.5rem;
+    border-radius: 10rem;
+}
+
+.hero {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hero img {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.hero .hero-text h1 {
+    font-size: 29px;
+    margin: 0;
+}
+
+.hero .hero-text button {
+    padding: .8rem;
+    width: 50vw;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 100rem;
+}
+
+.links {
+    margin-top: 4rem;
+    display: grid;
+}
+
+small {
+    color: red;
+}
+
+.links .link_1 {
+    background-image: url('./img/bg-shorten-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 1rem;
+    background-color: var(--primary);
+    display: grid;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.links .link_1 div {
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.links .link_1 div input {
+    padding: .5rem;
+    border: none;
+    margin-bottom: .3rem;
+    border-radius: .3rem;
+}
+
+.links .link_1 button {
+    padding: .5rem;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.links .link_2 {
+    padding: 1rem 0rem 1rem 0rem;
+    background-color: white;
+    display: grid;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.links .link_2 .div1 {
+    border-bottom: .1rem solid black;
+    margin-bottom: .5rem;
+}
+
+.links .link_2 p {
+    padding-bottom: .5rem;
+    margin: 0 1rem;
+}
+
+.links .link_2 .div2 {
+    margin-right: 2rem;
+    color: var(--secondary);
+}
+
+.links .link_2 button {
+    margin: 0 1rem;
+    padding: .5rem;
+    border: none;
+    border-radius: .3rem;
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: white;
+}
+
+.stats {
+    text-align: center;
+}
+
+.stats .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    max-height: 30vh;
+    max-width: 100vw;
+}
+
+.card:first-child::after {
+    content: '';
+    position: absolute;
+    width: .5rem;
+    height: 15vh;
+    z-index: -1;
+    background-color: var(--secondary);
+}
+
+.card2::after {
+    content: '';
+    position: absolute;
+    width: .5rem;
+    height: 15vh;
+    z-index: -1;
+    background-color: var(--secondary);
+}
+
+.icon {
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--primary);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: -3rem;
+}
+
+.banner {
+    background-color: var(--primary);
+    background-image: url('./img/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+.banner button {
+    padding: .8rem;
+    width: 50%;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 100rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+footer div:first-child h1 {
+    font-size: 32px;
+}
+
+footer div {
+    margin-top: 2rem;
+}
+
+footer section {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.handles ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 521px) {
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        align-items: center;
+    }
+
+    header .mobile, .menu {
+        display: none;
+    }
+
+    header .desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+    }
+
+    header .desktop ul {
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .signup {
+        background-color: aqua;
+        padding: .5rem;
+        border-radius: 10rem;
+        width: 6vw;
+        text-align: center;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .hero img {
+        width: 45vw;
+    }
+
+    .hero .hero-text h1 {
+        font-size: 40px;
+        font-weight: bold;
+        
+    }
+
+    .hero .hero-text button {
+        width: 10vw;
+    }
+
+    .links .link_1 {
+        background-image: url('./img/bg-shorten-desktop.svg');
+        display: grid;
+        grid-template-columns: 10fr 2fr;
+        gap: .5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    .links .link_1 input {
+        height: 1.5rem;
+    }
+
+    .links .link_1 button {
+        height: 2.5rem;
+    }
+
+    .links .link_2 {
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        align-items: baseline;
+    }
+
+    .links .link_2 .div1 {
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .links .link_2 .div2 {
+        display: flex;
+        align-items: baseline;
+        margin-right: 0;
+    }
+
+    .stats .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .card {
+        height: 30vh;
+        padding: 1rem;
+    }
+
+    .card2 {
+        margin-top: 2rem;
+    }
+
+    .card:last-child {
+        margin-top: 4rem;
+    }
+
+    .card:first-child::after {
+        width: 20vw;
+        margin: auto;
+        height: .5rem;
+    }
+    
+    .card2::after {
+        width: 20vw;
+        height: .5rem;
+        margin-bottom: -5rem;
+    }
+
+    .icon {
+        margin-left: 1rem;
+    }
+
+    .banner {
+        background-image: url('./img/bg-boost-desktop.svg');
+        background-size: cover;
+        height: 25vh;
+    }
+
+    .banner button {
+        width: 10%;
+    }
+
+    footer {
+        display: grid;
+        text-align: justify;
+    }
+
+    footer section {
+        width: 100%;
+        display: grid;
+        gap: 6rem;
+        justify-content: center;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 
+    }
+
+    .handles ul {
+        margin-top: 1.8rem;
+    }
+}
